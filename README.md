@@ -83,18 +83,18 @@ files and add the respective directory structure.
 > [!NOTE]
 > Need to Haves:
 >
-> Git
-> CMake
-> Make (or your build system of choice)
-> Clang (or your C compiler of choice)
+> - Git
+> - CMake
+> - Make (or your build system of choice)
+> - Clang (or your C compiler of choice)
 
 
 > [!NOTE]
 > Nice to Haves:
 >
-> tmux
-> tmuxp
-> Bocan Online Developer Toolkit (shameless plug)
+> - tmux
+> - tmuxp
+> - Bocan Online Developer Toolkit (shameless plug)
 
 
 ### 1. Clone the repository to your desired project directory.
