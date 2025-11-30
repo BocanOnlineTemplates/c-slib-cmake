@@ -1,12 +1,7 @@
 # LowLevelTemplate
 ## The Bocan Online C Project Template
 
-This repository serves as a template for C projects for Bocan Online and Bocan 
-Studio. It can be used via git clone, or integrated via the [Bocan Online 
-Developer Toolkit](https://github.com/BocanOnline/PythonUtilities) or other
-developer kit that you might use.
-
----
+A template for C projects for Bocan Online and Bocan Studio. 
 
 ### Overview
 
@@ -15,9 +10,9 @@ uses a monorepo layout featuring an internal static library for core code
 (Template-Core) and an application featuring application-specific code 
 (Template-App). This architecture is inspired by 
 [TheCherno's C++ Architecture](https://github.com/TheCherno/Architecture)
-design.
-
----
+design. This repository  can be used via git clone, or integrated via the 
+[Bocan Online Developer Toolkit](https://github.com/BocanOnline/PythonUtilities)
+or whatever development workflow that you use.
 
 ### Architecture
 
@@ -84,25 +79,23 @@ developing your project. If you need more than one "Core" or more than one
 "App" in your project, you will need to make some edits in the CMakeLists.txt
 files and add the respective directory structure.
 
+
 > [!NOTE]
 > Need to Haves:
 >
 > Git
->
 > CMake
->
 > Make (or your build system of choice)
->
 > Clang (or your C compiler of choice)
+
 
 > [!NOTE]
 > Nice to Haves:
 >
 > tmux
->
 > tmuxp
->
 > Bocan Online Developer Toolkit (shameless plug)
+
 
 ### 1. Clone the repository to your desired project directory.
 
@@ -125,10 +118,12 @@ project(Template C)
 ```
 
 You can then edit the Template-App and Template-Core directories and the 
-associated files to also match your project name.
+associated files to also match your project name (e.g. NewName-Core and NewName-App).
+
 
 > [!IMPORTANT] 
 > The name of the project in CMake and the names of the project directories (Template-Core and Template-App) must match for CMake to build the project properly.
+
 
 ### 3. Build the project.
 
@@ -170,7 +165,7 @@ chmod +x ./scripts/build-clean.sh \
 
 ---
 
-### Documentation
+## Documentation
 
 README.md
 
@@ -178,11 +173,10 @@ README.md
 
 [//]: # (TODO: Add link to docs/ root to documentation tree.)
 
----
 
 ### License
 
 This project is published under The Unlicense. 
-The code is public domain—use it however you want. 
+The code is public domain; use it however you want. 
 
 Full text in [LICENSE.md](/LICENSE.md)
