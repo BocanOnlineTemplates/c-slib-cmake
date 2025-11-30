@@ -1,0 +1,9 @@
+session_name: LowLevelTemplate
+windows:
+  - window_name: editor-project
+    shell_command_before:
+      - cd ~/Developer/BocanOnlineTemplates/c
+      - nvim
+  - window_name: shell
+    shell_command_before:
+      - cd ~/Developer/BocanOnlineTemplates/c
