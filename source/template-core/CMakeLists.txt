@@ -2,12 +2,12 @@ message(STATUS "[${CORE_NAME}]: Configuring...")
 
 file(GLOB_RECURSE CORE_ALL_C_SOURCES
     CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/*.c"
 )
 
 file(GLOB_RECURSE CORE_TEST_SOURCES
     CONFIGURE_DEPENDS
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.test.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/source/*.test.c"
 )
 
 set(CORE_MODULE_SOURCES ${CORE_ALL_C_SOURCES})
@@ -23,7 +23,7 @@ add_library(${CORE_NAME} STATIC
 
 target_include_directories(${CORE_NAME}
     PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/source
 )
 
 if(BUILD_TESTING AND CORE_TEST_SOURCES)
@@ -33,7 +33,7 @@ if(BUILD_TESTING AND CORE_TEST_SOURCES)
 
         get_filename_component(test_name_raw ${test_file} NAME)
 
-        string(REPLACE ".test.c" "_Test" test_name ${test_name_raw})
+        string(REPLACE ".test.c" "_test" test_name ${test_name_raw})
         
         message(STATUS "[${CORE_NAME}]: Adding test target ${test_name} from ${test_file}.")
 
@@ -48,7 +48,7 @@ if(BUILD_TESTING AND CORE_TEST_SOURCES)
 
         target_include_directories(${test_name}
             PRIVATE
-                ${CMAKE_CURRENT_SOURCE_DIR}/src
+                ${CMAKE_CURRENT_SOURCE_DIR}/source
             )
         
         add_test(

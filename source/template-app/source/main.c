@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 
-#include "ModuleA.h"
+#include "module_a.h"
 
 int main(void) {
 

@@ -1,7 +1,7 @@
 //
 // LowLevelTemplate
 // Bocan Online C Template Project
-// ModuleA.c
+// module_a.c
 //
 
 //
@@ -15,7 +15,7 @@
 // Application Headers
 //
 #define MODULEA_IMPORT
-#include "ModuleA.h"
+#include "module_a.h"
 
 //
 // Private Macros and Constants

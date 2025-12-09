@@ -1,7 +1,7 @@
 //
 // LowLevelTemplate
 // Bocan Online C Template Project
-// ModuleA.test.c
+// module_a.test.c
 //
 #include <assert.h>
 #include <stdio.h>

@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.23)
 
-project(Template C)
+project(template C)
 
-set(APP_NAME ${PROJECT_NAME}-App)
-set(CORE_NAME ${PROJECT_NAME}-Core)
+set(APP_NAME ${PROJECT_NAME}-app)
+set(CORE_NAME ${PROJECT_NAME}-core)
 
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
@@ -22,5 +22,5 @@ if(BUILD_TESTING)
     enable_testing()
 endif()
 
-add_subdirectory(${APP_NAME})
-add_subdirectory(${CORE_NAME})
+add_subdirectory(source/${APP_NAME})
+add_subdirectory(source/${CORE_NAME})
