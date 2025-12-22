@@ -20,12 +20,12 @@ int main(void) {
         module_a_action();
     }
     
+    module_a_end();
+    
     printf("Press enter to exit.\n"); 
 
     char bo;
     int result = scanf("%c", &bo);
-
-    module_a_end();
 
     printf("Exiting...\n");
     return 0;
