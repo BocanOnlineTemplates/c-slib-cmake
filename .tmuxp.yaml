@@ -1,4 +1,4 @@
-session_name: LowLevelTemplate
+session_name: c
 windows:
   - window_name: editor-project
     shell_command_before:

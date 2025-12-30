@@ -1,4 +1,4 @@
-project: LowLevelTemplate
+project: c
 description: A templatee for C projects for Bocan Online and Bocan Studio.
 language: C
 environment: CMake, Make
