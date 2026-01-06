@@ -1,5 +1,8 @@
-project: c
-description: A templatee for C projects for Bocan Online and Bocan Studio.
+project: c-slib-cmake
+description: >
+  A template project using CMake which generates a static core library
+  for Bocan Online C Projects.
+
 language: C
 environment: CMake, Make
 requires:
@@ -14,4 +17,4 @@ other:
   - ./scripts/build-release.sh  --(build the release configuration)
   - ./scripts/run-debug.sh      --(run the application with debug config)
   - ./scripts/run-release.sh    --(run the application with release config)
-  - ./scripts/clean.sh          --(remove build-debug/ and build-release/) 
+  - ./scripts/build-clean.sh          --(remove build-debug/ and build-release/) 

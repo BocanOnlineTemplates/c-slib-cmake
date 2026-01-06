@@ -1,8 +1,11 @@
+////////////////////////////////////////////////////////////////////////////////
+// organization: Bocan Online Templates
+// author: Matthew Buchanan
 //
-// LowLevelTemplate
-// Bocan Online C Template Project
-// module_a.test.c
-//
+// project: c-slib-cmake
+// file: module_a.test.c
+// license: The Unlicense
+////////////////////////////////////////////////////////////////////////////////
 #include <assert.h>
 #include <stdio.h>
 
